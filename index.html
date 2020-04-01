@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target="#main-nav">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
         <div class="container">
             <a href="#home" class="navbar-brand">
                 <img src="./img/clogo.png" alt="" width="50" height="50">
@@ -335,6 +335,69 @@
         </div>
     </section>
     <!-- End Author Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3>Get In Touch</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sunt?</p>
+                    <form>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </span>
+                            </div>
+                            <textarea class="form-control" name="message" placeholder="Messages" rows="5"></textarea>
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="submit" class="btn btn-primary btn-block btn-lg">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-3 align-self-center">
+                    <img src="./img/clogo.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 ml-auto">
+                    <p class="lead">
+                        Copyright &copy; <span id="year"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- JQuery JS File -->
     <script src="./js/jquery-3.4.1.min.js"></script>
